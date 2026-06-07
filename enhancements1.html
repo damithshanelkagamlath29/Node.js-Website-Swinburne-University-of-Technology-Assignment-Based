@@ -1,0 +1,135 @@
+<!-- 
+=====================================================
+File Name: index.php
+Author: Damith Shanelka Gamlath
+Student Id: 106419262
+Created: 2026
+Last Modified: 2026
+Purpose: Describes the HTML and CSS enhancements
+         implemented beyond the assignment requirements
+=====================================================
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="HTML and CSS enhancements for the Node.js website">
+    <meta name="keywords" content="Node.js, JavaScript, CSS, HTML, enhancement">
+    <meta name="author" content="Damith Shanelka">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Node.js - Enhancements</title>
+</head>
+<body>
+
+    <!-- Background Video Code Start -->
+
+<div class="backgroundvideo">
+    <video autoplay muted loop playsinline id="bgvideo">
+        <source src="images/background.mp4" type="video/mp4">
+    </video>
+    <div class="video-overlay"></div>
+</div>
+
+    <!-- Background Video Code End -->
+
+    <!-- Header Code Start Code -->
+
+<header>
+    <h1>Node.js Website</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="topic.php">Topic</a></li>
+        <li><a href="quiz.php">Quiz</a></li>
+        <li><a href="enhancements1.html" class="active">Enhancements 01</a></li>
+        <li><a href="enhancements2.html">Enhancements 02</a></li>
+        <li><a href="phpenhancements.php">PHP Enhancements</a></li>
+        <li><a href="manage.php">Manage</a></li>
+    </ul>
+</nav>
+
+    <!-- Header Code End -->
+
+<main>
+
+    <header>
+
+    <h1>Enhancements 01</h1>
+
+    </header>
+
+    <!-- Section One Code Start -->
+
+    <section class="section-enhancements-one">
+        <h2 class="section-enhancements-one-h2">Overview</h2>
+        <p class="section-enhancements-one-p">This page describes the HTML and CSS enhancements applied to the website beyond the basic assignment requirements. These enhancements improve the visual appearance, usability, and overall user experience of the website. A maximum of 2 enhancements are submitted for marking.</p>
+    </section>
+
+    <!-- Section One Code End -->
+
+    <!-- Section Two Code Start -->
+
+    <section class="section-enhancements-two">
+        <h2 class="section-enhancements-two-h2">Enhancement 1: Background Video with Overlay</h2>
+
+        <p class="section-enhancements-two-p">
+            <strong>How it goes beyond the basic requirements:</strong>
+            The assignment specification requires a background graphic on index.html using CSS. This enhancement goes beyond that by implementing a looping background video on all pages, with a semi-transparent dark overlay to ensure text remains readable.
+        </p>
+
+        <p class="section-enhancements-two-p">
+            <strong>Code needed to implement the feature:</strong>
+            A <code>&lt;div class="backgroundvideo"&gt;</code> contains an HTML5 <code>&lt;video&gt;</code> element with <code>autoplay muted loop playsinline</code> attributes. The CSS positions the container with <code>position: fixed; z-index: -2; width: 100%; height: 100%;</code> so it sits behind all other content. An additional <code>.video-overlay</code> div uses <code>background: rgba(0,0,0,0.6)</code> to darken the video for readability.
+        </p>
+
+        <p class="section-enhancements-two-p">
+            This can be seen on all pages including the <a href="index.php" class="section-enhancements-two-link">Home Page</a> and <a href="topic.php" class="section-enhancements-two-link">Topic Page</a>.
+        </p>
+    </section>
+
+    <!-- Section Two Code End -->
+
+    <!-- Section Three Code Start -->
+
+    <section class="section-enhancements-three">
+        <h2 class="section-enhancements-three-h2">Enhancement 2: Active Navigation Highlight and Hover Transitions</h2>
+
+        <p class="section-enhancements-three-p">
+            <strong>How it goes beyond the basic requirements:</strong>
+            The specification requires a menu with a background colour. This enhancement adds an <code>.active</code> CSS class that visually highlights the current page in the navigation menu, and uses CSS <code>transition</code> and <code>:hover</code> pseudo-class effects so links animate smoothly when hovered. This improves navigation usability.
+        </p>
+
+        <p class="section-enhancements-three-p">
+            <strong>Code needed to implement the feature:</strong>
+            In CSS, <code>nav ul li a.active</code> applies a highlighted colour and underline to the active page link. The <code>:hover</code> rule uses <code>transition: 0.3s</code> for smooth colour change. In PHP pages, the <code>$active_page</code> variable is used in <code>menu.inc</code> to apply the class dynamically.
+        </p>
+
+        <p class="section-enhancements-three-p">
+            This enhancement is visible on all pages via the navigation bar. Source reference: CSS transitions &mdash; <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition" target="_blank" rel="noopener noreferrer" class="section-enhancements-three-link">MDN Web Docs</a>.
+        </p>
+    </section>
+
+    <!-- Section Three Code End -->
+
+    <!-- Section Four Code Start -->
+
+    <section class="section-enhancements-four">
+        <h2 class="section-enhancements-four-h2">Other Improvements</h2>
+        <p class="section-enhancements-four-p">Additional improvements made to the website include: consistent YouTube video hyperlink on the home page, improved typography with readable fonts and spacing, styled figure/caption on the topic page, and responsive flexible layout using percentage-based widths.</p>
+    </section>
+
+    <!-- Section Four Code End -->
+
+</main>
+
+    <footer>
+        <p>Created by: Group Members &mdash; Jayasanka &mdash; Shanelka &mdash; Geenod &mdash; Tharusha </a></p>
+        <p>Email Your Tutor: <a href="mailto:rhettiarachchi@swin.edu.au" class="footer-p-link">Rukmal Hettiarachchi</a></p>
+        <p>&copy; 2026 Swinburne University of Technology. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

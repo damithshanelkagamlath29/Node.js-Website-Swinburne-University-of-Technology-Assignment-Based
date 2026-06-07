@@ -1,0 +1,1824 @@
+/*----
+=====================================================
+File Name: style.css
+Author: (Damith Shanelka, Geenod Bogoda, Tharusha Rukshan, Jayasanka Sadaruwan)
+Created: 2026
+Last Modified: 2026
+Purpose: Main stylesheet for the Node.js website.
+         Controls layout, colours, typography,
+         responsiveness, navigation, forms,
+         tables, and visual appearance
+=====================================================
+----*/
+
+/*------------------------------------------ Base Code Start ------------------------------------------------*/
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Body */
+/* FIX: PDF requires a CSS background graphic. Added background-image as fallback
+   for browsers that don't support video, and to satisfy the CSS requirement */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.6;
+    color: #2c2c2c;
+    background-image: url('images/background-static.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}/* Background Video Container */
+.backgroundvideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  overflow: hidden;
+}
+
+/* Video */
+#bgvideo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6) contrast(1.1);
+}
+
+/* Dark overlay (VERY IMPORTANT) */
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+/* Header */
+header {
+    text-align: center;
+    padding: 25px 15px;
+    background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.5));
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+header h1 {
+    font: bold 34px "Segoe UI", Arial, sans-serif;
+}
+
+/* Navigation */
+nav {
+    background: #111;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 12px 18px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ddd;
+    font-weight: 500;
+    transition: 0.3s;
+    padding: 5px 8px;
+}
+
+nav ul li a:hover {
+    color: #008e2f;
+    border-bottom: 2px solid #008e2f;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #111;
+    color: #ccc;
+    margin-top: 30px;
+    font-size: 14px;
+    font-style: italic;
+    width: 100%;
+    clear: both;
+}
+
+.footer-p-link {
+  color: #68a063; /* Node.js green */
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s ease;
+}
+
+/*------------------------------------------ Base Code End ------------------------------------------------*/
+
+/*------------------------------------------ Index Code Start ------------------------------------------------*/
+
+/* Section Styling Code Start */
+.section-index-one {
+    padding: 25px;
+    max-width: 950px;
+    margin: 30px auto;
+    background: #111;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.section-index-one-h2 {
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 22px;
+    border-left: 4px solid #008e2f;
+    padding-left: 8px;
+}
+.section-index-one-p {
+    margin-bottom: 12px;
+    text-align: justify;
+    color: #ddd;
+}
+.section-index-two {
+    padding: 25px;
+    max-width: 950px;
+    margin: 30px auto;
+    background: #111;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.section-index-two-h2 {
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 22px;
+    border-left: 4px solid #008e2f;
+    padding-left: 8px;
+}
+.section-index-two-p {
+    margin-bottom: 12px;
+    text-align: justify;
+    color: #ddd;
+}
+.section-index-three {
+    padding: 25px;
+    max-width: 950px;
+    margin: 30px auto;
+    background: #111;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.section-index-three-h2 {
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 22px;
+    border-left: 4px solid #008e2f;
+    padding-left: 8px;
+}
+.section-index-three-p {
+    margin-bottom: 12px;
+    text-align: justify;
+    color: #ddd;
+}
+.section-index-three-link {
+  color: #68a063; /* Node.js green */
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s ease;
+}
+
+.section-index-three-link:hover {
+  border-bottom: 2px solid #68a063;
+}
+
+/* Section Styling Code End */
+
+/*------------------------------------------ Index Code Start ------------------------------------------------*/
+
+/*------------------------------------------ Topic Code Start ------------------------------------------------*/
+
+/* Section One Styling Code Start */
+
+.section-topic-one {
+    padding: 25px;
+    max-width: 950px;
+    margin: 30px auto;
+    background: #111;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.section-topic-one-h2 {
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 22px;
+    border-left: 4px solid #008e2f;
+    padding-left: 8px;
+}
+.section-topic-one-p {
+    margin-bottom: 12px;
+    text-align: justify;
+    color: #ddd;
+}
+/* Section One Styling Code End */
+
+/* Aside Styling Code Start */
+/* FIX: PDF requires aside to be 30% width, float right, with coloured border */
+aside {
+  width: 28%;
+  float: right;
+  margin: 2px 15% 20px 20px;
+  min-height: 470px;
+  padding: 20px;
+  background: #111;
+  border: 2px solid #008e2f;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+aside h2 {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 15px;
+  border-left: 4px solid #008e2f;
+  padding-left: 8px;
+}
+aside dl {
+  margin: 0;
+}
+aside dt {
+  color: #008e2f;
+  font-weight: bold;
+  margin-top: 10px;
+}
+aside dd {
+  margin-left: 10px;
+  margin-bottom: 8px;
+  color: #ddd;
+}
+aside dl div {
+  background: #1a1a1a;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+/* Aside Styling Code End */
+
+/* Section Two Styling Code Start*/
+
+.section-topic-two {
+    padding: 25px;
+
+    max-width: 550px;
+    margin-left: 200px;
+    background: #111;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.section-topic-two-h2 {
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 22px;
+    border-left: 4px solid #008e2f;
+    padding-left: 8px;
+}
+.section-topic-two-p {
+    margin-bottom: 12px;
+    text-align: justify;
+    color: #ddd;
+}
+.section-topic-two-h3 {
+  margin: 15px 0 8px;
+  color: #ddd;
+  font-size: 18px;
+  border-left: 3px solid #008e2f;
+  padding-left: 8px;
+}
+.section-topic-two ol {
+  list-style: none;
+  counter-reset: item;
+  padding-left: 0;
+}
+
+.section-topic-two ol li {
+  counter-increment: item;
+  margin-bottom: 12px;
+  padding: 10px 15px 10px 45px;
+  background: #1a1a1a;
+  border-radius: 6px;
+  color: #ddd;
+  position: relative;
+}
+
+.section-topic-two ol li::before {
+  content: counter(item);
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #008e2f;
+  color: #fff;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Section Three Stryling Code Start */
+
+/* Section container */
+.section-topic-three {
+  max-width: 950px;
+  margin: 30px auto;
+  padding: 25px;
+  background: #111;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+/* Section heading */
+.section-topic-three-h2 {
+  color: #fff;
+  font-size: 22px;
+  margin-bottom: 15px;
+  border-left: 4px solid #008e2f;
+  padding-left: 8px;
+  text-align: left;
+}
+
+/* Figure styling */
+.section-topic-three-figure {
+  margin: 0;
+}
+
+/* Image styling */
+.section-topic-three-figure-img {
+  max-width: 100%;
+  border-radius: 8px;
+  border: 2px solid #1a1a1a;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover effect on image */
+.section-topic-three-figure-img:hover {
+  transform: scale(1.03);
+  border-color: #008e2f;
+}
+
+/* Caption styling */
+.section-topic-three-figcaption {
+  margin-top: 10px;
+  color: #aaa;
+  font-size: 14px;
+  font-style: italic;
+}
+
+/* Section Three Styling Code End */
+
+/* Section Four Styling Code Start */
+
+/* Section container */
+.section-topic-four {
+  max-width: 950px;
+  margin: 30px auto;
+  padding: 25px;
+  background: #111;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Heading */
+.section-topic-four-h2 {
+  margin-bottom: 12px;
+  color: #fff;
+  font-size: 22px;
+  border-left: 4px solid #008e2f;
+  padding-left: 8px;
+}
+
+/* Paragraph */
+.section-topic-four-p {
+  color: #ddd;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+/* Table */
+.section-topic-four-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  color: #ddd;
+}
+
+/* Caption */
+.section-topic-four-caption {
+  caption-side: top;
+  margin-bottom: 10px;
+  color: #aaa;
+  font-style: italic;
+}
+
+/* Table header */
+.section-topic-four-table th {
+  background: #1a1a1a;
+  color: #fff;
+  padding: 10px;
+  border: 1px solid #222;
+}
+
+/* Table cells */
+.section-topic-four-table td {
+  padding: 10px;
+  border: 1px solid #222;
+  text-align: center;
+}
+
+/* Row hover effect */
+.section-topic-four-table tbody tr:hover {
+  background: #1f1f1f;
+}
+
+/* Section Four Styling Code End */
+
+/* Section container */
+.section-topic-five {
+  max-width: 950px;
+  margin: 30px auto;
+  padding: 25px;
+  background: #111;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Heading */
+.section-topic-five-h2 {
+  margin-bottom: 15px;
+  color: #fff;
+  font-size: 22px;
+  border-left: 4px solid #008e2f;
+  padding-left: 8px;
+}
+
+/* Definition list */
+.section-topic-five-dl {
+  margin: 0;
+}
+
+/* Terms */
+.section-topic-five-dt {
+  color: #008e2f;
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+/* Descriptions */
+.section-topic-five-dd {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  color: #ddd;
+}
+
+/* Optional: subtle card feel per item */
+.section-topic-five-dt + .section-topic-five-dd {
+  background: #1a1a1a;
+  padding: 8px 10px;
+  border-radius: 6px;
+}
+
+/* Section container */
+.section-topic-six {
+  max-width: 950px;
+  margin: 30px auto;
+  padding: 25px;
+  background: #111;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Heading */
+.section-topic-six-h2 {
+  margin-bottom: 12px;
+  color: #fff;
+  font-size: 22px;
+  border-left: 4px solid #008e2f;
+  padding-left: 8px;
+}
+
+/* Paragraph */
+.section-topic-six-p {
+  color: #ddd;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+/* List */
+.section-topic-six-ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* List items */
+.section-topic-six-ul li {
+  margin-bottom: 10px;
+}
+
+/* Links */
+.section-topic-six-link {
+  display: inline-block;
+  color: #68a063;
+  text-decoration: none;
+  padding: 8px 12px;
+  background: #1a1a1a;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+/* Hover effect */
+.section-topic-six-link:hover {
+  background: #008e2f;
+  color: #fff;
+  transform: translateX(5px);
+}
+
+/* Section Seven Styling Code Start */
+
+.section-topic-seven {
+  max-width: 950px;
+  margin: 30px auto;
+  padding: 25px;
+  background: #111;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.section-topic-seven-h2 {
+  margin-bottom: 15px;
+  color: #fff;
+  font-size: 22px;
+  border-left: 4px solid #008e2f;
+  padding-left: 8px;
+}
+
+.section-topic-seven-p {
+  color: #ddd;
+  margin-bottom: 15px;
+  text-align: justify;
+  line-height: 1.8;
+}
+
+/* Section Seven Styling Code End */
+
+/*------------------------------------------ Topic Code End ------------------------------------------------*/
+
+/*------------------------------------------ Quiz Code Start ------------------------------------------------*/
+
+
+/* Section One Styling Code Start */
+.section-quiz-one {
+    padding: 25px;
+    max-width: 950px;
+    margin: 30px auto;
+    background: #111;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.section-quiz-one-h2 {
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 22px;
+    border-left: 4px solid #008e2f;
+    padding-left: 8px;
+}
+.section-quiz-one-p{
+     margin-bottom: 12px;
+    text-align: justify;
+    color: #ddd;
+}
+/* Section One Styling Code End */
+
+/* Section Two Styling Code Start */
+.section-quiz-two {
+    padding: 25px;
+    max-width: 950px;
+    margin: 30px auto;
+    background: #111;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.section-quiz-two-h2 {
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 22px;
+    border-left: 4px solid #008e2f;
+    padding-left: 8px;
+}
+/* Section container (already similar to yours) */
+.section-quiz-two {
+  padding: 25px;
+  max-width: 950px;
+  margin: 30px auto;
+  background: #111;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Fieldset */
+.section-quiz-two fieldset {
+  border: 1px solid #222;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+/* Legend */
+.section-quiz-two legend {
+  color: #fff;
+  font-weight: 600;
+  padding: 0 10px;
+  border-left: 4px solid #008e2f;
+}
+
+/* Paragraph spacing */
+.section-quiz-two p {
+  margin-bottom: 15px;
+}
+
+/* Labels */
+.section-quiz-two label {
+  display: block;
+  margin-bottom: 5px;
+  color: #ccc;
+  font-size: 14px;
+}
+
+/* Inputs */
+.section-quiz-two input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #333;
+  background: #1a1a1a;
+  color: #fff;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+/* Input focus effect */
+.section-quiz-two input:focus {
+  border-color: #008e2f;
+  box-shadow: 0 0 5px #008e2f;
+}
+
+/* Optional: hover */
+.section-quiz-two input:hover {
+  border-color: #00b33c;
+}
+/* Section Two Styling Code End */
+
+/* Section Three Stryling Code Start */
+/* Section container */
+.section-quiz-three {
+  padding: 25px;
+  max-width: 950px;
+  margin: 30px auto;
+  background: #111;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Fieldset */
+.section-quiz-three fieldset {
+  border: 1px solid #222;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+/* Legend */
+.section-quiz-three legend {
+  color: #fff;
+  font-weight: 600;
+  padding: 0 10px;
+  border-left: 4px solid #008e2f;
+}
+
+/* Paragraph spacing */
+.section-quiz-three p {
+  margin-bottom: 15px;
+}
+
+/* Label */
+.section-quiz-three label {
+  display: block;
+  margin-bottom: 6px;
+  color: #ccc;
+  font-size: 14px;
+}
+
+/* Input */
+.section-quiz-three input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #333;
+  background: #1a1a1a;
+  color: #fff;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+/* Focus effect */
+.section-quiz-three input:focus {
+  border-color: #008e2f;
+  box-shadow: 0 0 5px #008e2f;
+}
+
+/* Hover effect */
+.section-quiz-three input:hover {
+  border-color: #00b33c;
+}
+/* Section Three Styling Code End */
+
+/* Section Four Styling Code Start */
+/* Section container */
+.section-quiz-four {
+  padding: 25px;
+  max-width: 950px;
+  margin: 30px auto;
+  background: #111;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Fieldset */
+.section-quiz-four fieldset {
+  border: 1px solid #222;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+/* Legend */
+.section-quiz-four legend {
+  color: #fff;
+  font-weight: 600;
+  padding: 0 10px;
+  border-left: 4px solid #008e2f;
+}
+
+/* Question text */
+.section-quiz-four-question {
+  color: #ddd;
+  margin-bottom: 12px;
+}
+
+/* Options spacing */
+.section-quiz-four p {
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+/* Radio buttons */
+.section-quiz-four input[type="radio"] {
+  margin-right: 8px;
+  accent-color: #008e2f; /* modern browsers */
+  cursor: pointer;
+}
+
+/* Labels */
+.section-quiz-four label {
+  cursor: pointer;
+}
+
+/* Hover effect */
+.section-quiz-four p:hover {
+  color: #fff;
+}
+/* Section Four Styling Code End */
+
+/* Section Five Styling Code Start */
+/* Section container */
+.section-quiz-five {
+  padding: 25px;
+  max-width: 950px;
+  margin: 30px auto;
+  background: #111;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Fieldset */
+.section-quiz-five fieldset {
+  border: 1px solid #222;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+/* Legend */
+.section-quiz-five legend {
+  color: #fff;
+  font-weight: 600;
+  padding: 0 10px;
+  border-left: 4px solid #008e2f;
+}
+
+/* Question text */
+.section-quiz-five p:first-of-type {
+  color: #ddd;
+  margin-bottom: 12px;
+}
+
+/* Options */
+.section-quiz-five p {
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+/* Checkboxes */
+.section-quiz-five input[type="checkbox"] {
+  margin-right: 8px;
+  accent-color: #008e2f; /* modern browsers */
+  cursor: pointer;
+}
+
+/* Labels */
+.section-quiz-five label {
+  cursor: pointer;
+}
+
+/* Hover effect */
+.section-quiz-five p:hover {
+  color: #fff;
+}
+.section-quiz-five p {
+  background: #1a1a1a;
+  padding: 8px 12px;
+  border-radius: 6px;
+
+}
+
+.section-quiz-five p:hover {
+  background: #222;
+  transform: translateX(5px);
+}
+/* Section Five Styling Code End */
+
+/* Section Six Styling Code Start */
+
+/* Section container */
+.section-quiz-six {
+  padding: 25px;
+  max-width: 950px;
+  margin: 30px auto;
+  background: #111;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Fieldset */
+.section-quiz-six fieldset {
+  border: 1px solid #222;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+/* Legend */
+.section-quiz-six legend {
+  color: #fff;
+  font-weight: 600;
+  padding: 0 10px;
+  border-left: 4px solid #008e2f;
+}
+
+/* Label */
+.section-quiz-six label {
+  display: block;
+  margin-bottom: 6px;
+  color: #ccc;
+}
+
+/* Paragraph spacing */
+.section-quiz-six p {
+  margin-bottom: 12px;
+}
+
+/* Select dropdown */
+.section-quiz-six select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #333;
+  background: #1a1a1a;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* Focus effect */
+.section-quiz-six select:focus {
+  border-color: #008e2f;
+  box-shadow: 0 0 5px #008e2f;
+}
+
+/* Hover effect */
+.section-quiz-six select:hover {
+  border-color: #00b33c;
+}
+
+/* Section Six Styling Code End */
+
+/* Section Seven Styling Code Start */
+
+/* Section container */
+.section-quiz-seven {
+  padding: 25px;
+  max-width: 950px;
+  margin: 30px auto;
+  background: #111;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Fieldset */
+.section-quiz-seven fieldset {
+  border: 1px solid #222;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+/* Legend */
+.section-quiz-seven legend {
+  color: #fff;
+  font-weight: 600;
+  padding: 0 10px;
+  border-left: 4px solid #008e2f;
+}
+
+/* Label */
+.section-quiz-seven label {
+  color: #ccc;
+}
+
+/* Textarea */
+.section-quiz-seven textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #333;
+  background: #1a1a1a;
+  color: #fff;
+  resize: vertical;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+/* Focus effect */
+.section-quiz-seven textarea:focus {
+  border-color: #008e2f;
+  box-shadow: 0 0 5px #008e2f;
+}
+
+/* Buttons container */
+.section-quiz-seven > p {
+  margin-top: 15px;
+}
+
+/* Buttons */
+.section-quiz-seven input[type="submit"],
+.section-quiz-seven input[type="reset"] {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: 500;
+}
+
+/* Submit button */
+.section-quiz-seven input[type="submit"] {
+  background: #008e2f;
+  color: #fff;
+}
+
+/* Reset button */
+.section-quiz-seven input[type="reset"] {
+  background: #333;
+  color: #fff;
+}
+
+/* Hover effects */
+.section-quiz-seven input[type="submit"]:hover {
+  background: #00b33c;
+}
+
+.section-quiz-seven input[type="reset"]:hover {
+  background: #555;
+}
+
+/* Section Seven Styling Code End */
+
+
+/*------------------------------------------ Quiz Code End ------------------------------------------------*/
+
+/*------------------------------------------ Enhancements Code Start ------------------------------------------------*/
+
+
+/* Section One Styling Code Start */
+.section-enhancements-one {
+    padding: 25px;
+    max-width: 950px;
+    margin: 30px auto;
+    background: #111;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.section-enhancements-one-h2 {
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 22px;
+    border-left: 4px solid #008e2f;
+    padding-left: 8px;
+}
+.section-enhancements-one-p {
+    margin-bottom: 12px;
+    text-align: justify;
+    color: #ddd;
+}
+/* Section One Styling Code End */
+
+/* Section Two Styling Code Start */
+.section-enhancements-two {
+    padding: 25px;
+    max-width: 950px;
+    margin: 30px auto;
+    background: #111;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.section-enhancements-two-h2 {
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 22px;
+    border-left: 4px solid #008e2f;
+    padding-left: 8px;
+}
+.section-enhancements-two-p {
+    margin-bottom: 12px;
+    text-align: justify;
+    color: #ddd;
+}
+.section-enhancements-two-link {
+  color: #68a063; /* Node.js green */
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s ease;
+}
+
+.section-enhancements-two-link:hover {
+  border-bottom: 2px solid #68a063;
+}
+/* Section Two Styling Code End */
+
+/* Section Three Styling Code Start */
+.section-enhancements-three {
+    padding: 25px;
+    max-width: 950px;
+    margin: 30px auto;
+    background: #111;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.section-enhancements-three-h2 {
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 22px;
+    border-left: 4px solid #008e2f;
+    padding-left: 8px;
+}
+.section-enhancements-three-p {
+    margin-bottom: 12px;
+    text-align: justify;
+    color: #ddd;
+}
+/* Section Three Styling Code End */
+
+/* Section Four Styling Code Start */
+.section-enhancements-four {
+    padding: 25px;
+    max-width: 950px;
+    margin: 30px auto;
+    background: #111;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.section-enhancements-four-h2 {
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 22px;
+    border-left: 4px solid #008e2f;
+    padding-left: 8px;
+}
+.section-enhancements-four-p {
+    margin-bottom: 12px;
+    text-align: justify;
+    color: #ddd;
+}
+/* Section Four Styling Code End */
+
+/* Section Five Styling Code Start */
+.section-enhancements-five {
+    padding: 25px;
+    max-width: 950px;
+    margin: 30px auto;
+    background: #111;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.section-enhancements-five-h2 {
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 22px;
+    border-left: 4px solid #008e2f;
+    padding-left: 8px;
+}
+.section-enhancements-five-p {
+    margin-bottom: 12px;
+    text-align: justify;
+    color: #ddd;
+}
+/* Section Five Styling Code End */
+
+/* Section Six Styling Code Start */
+.section-enhancements-six {
+    padding: 25px;
+    max-width: 950px;
+    margin: 30px auto;
+    background: #111;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.section-enhancements-six-h2 {
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 22px;
+    border-left: 4px solid #008e2f;
+    padding-left: 8px;
+}
+.section-enhancements-six-p {
+    margin-bottom: 12px;
+    text-align: justify;
+    color: #ddd;
+}
+.section-enhancements-six-link {
+  color: #68a063; /* Node.js green */
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s ease;
+}
+
+.section-enhancements-six-link:hover {
+  border-bottom: 2px solid #68a063;
+}
+/* Section Six Styling Code End */
+
+.section-enhancements-seven {
+    padding: 25px;
+    max-width: 950px;
+    margin: 30px auto;
+    background: #111;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.section-enhancements-seven-h2 {
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 22px;
+    border-left: 4px solid #008e2f;
+    padding-left: 8px;
+}
+.section-enhancements-seven-p {
+    margin-bottom: 12px;
+    text-align: justify;
+    color: #ddd;
+}
+
+/*------------------------------------------ Enhancements Code End ------------------------------------------------*/
+
+/*------------------------------------------ Manage Page Code Start ------------------------------------------------*/
+
+/* Section One */
+.section-manage-one {
+    padding: 25px;
+    max-width: 950px;
+    margin: 30px auto;
+    background: #111;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.section-manage-one-h2 {
+    color: #fff;
+    font-size: 22px;
+    border-left: 4px solid #008e2f;
+    padding-left: 8px;
+}
+
+/* Shared manage section style */
+.section-manage-two, .section-manage-three, .section-manage-four,
+.section-manage-five, .section-manage-six, .section-manage-seven {
+    padding: 25px;
+    max-width: 950px;
+    margin: 20px auto;
+    background: #111;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Fieldsets */
+.section-manage-two fieldset, .section-manage-three fieldset,
+.section-manage-four fieldset, .section-manage-five fieldset,
+.section-manage-six fieldset, .section-manage-seven fieldset {
+    border: 1px solid #222;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+/* Legends */
+.section-manage-two legend, .section-manage-three legend,
+.section-manage-four legend, .section-manage-five legend,
+.section-manage-six legend, .section-manage-seven legend {
+    color: #fff;
+    font-weight: 600;
+    padding: 0 10px;
+    border-left: 4px solid #008e2f;
+}
+
+/* Labels */
+.section-manage-two label, .section-manage-three label,
+.section-manage-six label, .section-manage-seven label {
+    display: block;
+    color: #ccc;
+    margin-bottom: 5px;
+}
+
+/* Inputs */
+.section-manage-two input[type="text"],
+.section-manage-three input[type="text"],
+.section-manage-six input[type="text"],
+.section-manage-seven input[type="text"],
+.section-manage-seven input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #333;
+    background: #1a1a1a;
+    color: #fff;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+/* Submit buttons */
+input[type="submit"] {
+    padding: 10px 18px;
+    background: #008e2f;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+input[type="submit"]:hover {
+    background: #00b33c;
+}
+
+/* Table section */
+.section-manage-eight {
+    padding: 25px;
+    max-width: 950px;
+    margin: 30px auto;
+    background: #111;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    overflow-x: auto;
+}
+.section-manage-eight-h2 {
+    color: #fff;
+    font-size: 22px;
+    border-left: 4px solid #008e2f;
+    padding-left: 8px;
+    margin-bottom: 15px;
+}
+.section-manage-eight-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #ddd;
+}
+.section-manage-eight-table th {
+    background: #1a1a1a;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid #222;
+}
+.section-manage-eight-table td {
+    padding: 10px;
+    border: 1px solid #222;
+    text-align: center;
+}
+.section-manage-eight-table tbody tr:hover {
+    background: #1f1f1f;
+}
+
+/* Result section for markquiz.php */
+.section-result {
+    padding: 25px;
+    max-width: 950px;
+    margin: 30px auto;
+    background: #111;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    color: #ddd;
+}
+.section-result h2 {
+    color: #fff;
+    font-size: 22px;
+    border-left: 4px solid #008e2f;
+    padding-left: 8px;
+    margin-bottom: 15px;
+}
+.section-result p {
+    margin-bottom: 10px;
+}
+.section-result a {
+    color: #68a063;
+    text-decoration: none;
+    font-weight: 600;
+}
+.section-result a:hover {
+    color: #00b33c;
+}
+
+/*------------------------------------------ Manage Page Code End ------------------------------------------------*/
+
+/*------------------------------------------ Mobile Responsive Code Start ------------------------------------------------*/
+
+/* Tablet - screens 768px and below */
+@media screen and (max-width: 768px) {
+
+    /* Nav - stack links vertically on small screens */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        margin: 6px 0;
+    }
+
+    /* Header font smaller on mobile */
+    header h1 {
+        font-size: 24px;
+    }
+
+    /* Aside - stop floating, go full width on mobile */
+    aside {
+        float: none;
+        width: 95%;
+        margin: 15px auto;
+        min-height: auto;
+    }
+
+    /* Section topic two - remove fixed left margin, go full width */
+    .section-topic-two {
+        max-width: 95%;
+        margin: 15px auto;
+    }
+
+    /* All main content sections - full width with small margin */
+    .section-index-one, .section-index-two, .section-index-three,
+    .section-topic-one, .section-topic-three, .section-topic-four,
+    .section-topic-five, .section-topic-six,
+    .section-quiz-one, .section-quiz-two, .section-quiz-three,
+    .section-quiz-four, .section-quiz-five, .section-quiz-six,
+    .section-quiz-seven,
+    .section-enhancements-one, .section-enhancements-two,
+    .section-enhancements-three, .section-enhancements-four,
+    .section-enhancements-five, .section-enhancements-six,
+    .section-enhancements-seven,
+    .section-manage-one, .section-manage-two, .section-manage-three,
+    .section-manage-four, .section-manage-five, .section-manage-six,
+    .section-manage-seven, .section-manage-eight,
+    .section-result {
+        max-width: 95%;
+        margin: 15px auto;
+        padding: 15px;
+    }
+
+    /* Table - allow horizontal scroll on small screens */
+    .section-topic-four-table,
+    .section-manage-eight-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    /* Inputs and selects full width */
+    input[type="text"],
+    input[type="number"],
+    select,
+    textarea {
+        width: 100%;
+    }
+
+    /* Submit and reset buttons full width on mobile */
+    input[type="submit"],
+    input[type="reset"] {
+        width: 100%;
+        margin-bottom: 8px;
+        margin-right: 0;
+    }
+
+    /* Footer full width */
+    footer {
+        width: 100%;
+        padding: 10px;
+    }
+
+}
+
+/* Mobile - screens 480px and below */
+@media screen and (max-width: 480px) {
+
+    /* Even smaller header font */
+    header h1 {
+        font-size: 20px;
+    }
+
+    /* Slightly smaller section padding */
+    .section-index-one, .section-index-two, .section-index-three,
+    .section-topic-one, .section-topic-two, .section-topic-three,
+    .section-topic-four, .section-topic-five, .section-topic-six,
+    .section-quiz-one, .section-quiz-two, .section-quiz-three,
+    .section-quiz-four, .section-quiz-five, .section-quiz-six,
+    .section-quiz-seven, aside,
+    .section-enhancements-one, .section-enhancements-two,
+    .section-enhancements-three, .section-enhancements-four,
+    .section-enhancements-five, .section-enhancements-six,
+    .section-enhancements-seven,
+    .section-manage-one, .section-manage-two, .section-manage-three,
+    .section-manage-four, .section-manage-five, .section-manage-six,
+    .section-manage-seven, .section-manage-eight,
+    .section-result {
+        padding: 12px;
+    }
+
+    /* Headings scale down */
+    .section-index-one-h2, .section-index-two-h2, .section-index-three-h2,
+    .section-topic-one-h2, .section-topic-two-h2, .section-topic-three-h2,
+    .section-topic-four-h2, .section-topic-five-h2, .section-topic-six-h2,
+    .section-quiz-one-h2, .section-enhancements-one-h2,
+    .section-manage-one-h2, .section-manage-eight-h2 {
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  aside {
+    width: 90%;
+    float: none;
+    margin: 20px auto;
+    min-height: auto;
+  }
+
+  .section-topic-two {
+    max-width: 90%;
+    margin: 20px auto;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  .section-index-one,
+  .section-index-two,
+  .section-index-three,
+  .section-topic-one,
+  .section-topic-three,
+  .section-topic-four,
+  .section-topic-five,
+  .section-topic-six,
+  .section-quiz-one,
+  .section-quiz-two,
+  .section-quiz-three,
+  .section-quiz-four,
+  .section-quiz-five {
+      width: 95%;
+  }
+}
+/* Responsive Design Code Start */
+
+@media screen and (max-width: 768px) {
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  aside {
+    width: 90%;
+    float: none;
+    margin: 20px auto;
+    min-height: auto;
+  }
+
+  .section-topic-two {
+    max-width: 90%;
+    margin: 20px auto;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  .section-index-one,
+  .section-index-two,
+  .section-index-three,
+  .section-topic-one,
+  .section-topic-three,
+  .section-topic-four,
+  .section-topic-five,
+  .section-topic-six,
+  .section-topic-seven,
+  .section-quiz-one,
+  .section-quiz-two,
+  .section-quiz-three,
+  .section-quiz-four,
+  .section-quiz-five {
+      width: 95%;
+  }
+
+  video {
+    object-fit: cover;
+  }
+}
+/* Error Message Styling */
+
+.error-box {
+  max-width: 950px;
+  margin: 20px auto;
+  padding: 15px;
+  background: #300;
+  border-left: 5px solid red;
+  border-radius: 6px;
+  color: #fff;
+}
+
+/* Responsive Design Code End */
+/*------------------------------------------ Mobile Responsive Code End ------------------------------------------------*/
+
+/*------------------------------------------ Login Page & PHP Enhancements Extra Styles ------------------------------------------------*/
+
+/* Login section (manage_login.php) */
+.section-login {
+    padding: 25px;
+    max-width: 500px;
+    margin: 30px auto;
+    background: #111;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    color: #ddd;
+}
+
+.section-login h2 {
+    color: #fff;
+    font-size: 22px;
+    border-left: 4px solid #008e2f;
+    padding-left: 8px;
+    margin-bottom: 15px;
+}
+
+.section-login label {
+    display: block;
+    color: #ccc;
+    margin-bottom: 5px;
+}
+
+.section-login input[type="text"],
+.section-login input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #333;
+    background: #1a1a1a;
+    color: #fff;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.section-login input[type="text"]:focus,
+.section-login input[type="password"]:focus {
+    border-color: #008e2f;
+}
+
+/* PHP Enhancements lists */
+.section-enhancements-two-ul,
+.section-enhancements-three-ul {
+    list-style: disc;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    color: #ddd;
+}
+
+.section-enhancements-two-ul li,
+.section-enhancements-three-ul li {
+    margin-bottom: 8px;
+    color: #ddd;
+}
+
+/* Inline code styling for enhancement pages */
+code {
+    background: #1a1a1a;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 13px;
+    color: #68a063;
+}
+
+/* Enhancement link styles if not already covered */
+.section-enhancements-three-link {
+    color: #68a063;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s ease;
+}
+.section-enhancements-three-link:hover {
+    border-bottom: 2px solid #68a063;
+}
+/*------------------------------------------ Manage Login / Manage Page Extra Styles ------------------------------------------------*/
+
+/* Bubble card - wraps all manage.php content */
+.bubble {
+    padding: 25px;
+    max-width: 950px;
+    margin: 30px auto;
+    background: #111;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    color: #ddd;
+}
+
+.bubble h2 {
+    color: #fff;
+    font-size: 22px;
+    border-left: 4px solid #008e2f;
+    padding-left: 8px;
+    margin-bottom: 15px;
+}
+
+.bubble h3 {
+    color: #fff;
+    font-size: 18px;
+    border-left: 3px solid #008e2f;
+    padding-left: 8px;
+    margin: 20px 0 10px;
+}
+
+.bubble p {
+    margin-bottom: 10px;
+    color: #ddd;
+}
+
+.bubble a {
+    color: #68a063;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.bubble a:hover {
+    color: #00b33c;
+}
+
+.bubble ul {
+    list-style: disc;
+    padding-left: 25px;
+    color: #ddd;
+}
+
+.bubble ul li {
+    margin-bottom: 6px;
+}
+
+/* Search and sort form inputs inside bubble */
+.bubble label {
+    display: inline-block;
+    color: #ccc;
+    margin-right: 8px;
+}
+
+.bubble input[type="text"],
+.bubble input[type="number"],
+.bubble select {
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid #333;
+    background: #1a1a1a;
+    color: #fff;
+    outline: none;
+    margin-right: 8px;
+}
+
+.bubble input[type="text"]:focus,
+.bubble input[type="number"]:focus,
+.bubble select:focus {
+    border-color: #008e2f;
+}
+
+.bubble input[type="submit"] {
+    background: #008e2f;
+    color: #fff;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.bubble input[type="submit"]:hover {
+    background: #00b33c;
+}
+
+/* Attempts table inside bubble */
+.bubble table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.bubble table th {
+    background: #008e2f;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+}
+
+.bubble table td {
+    background: #1a1a1a;
+    color: #ddd;
+    padding: 9px 10px;
+    border-bottom: 1px solid #333;
+}
+
+.bubble table tr:hover td {
+    background: #222;
+}
+
+/* Success feedback message */
+.success-box {
+    max-width: 950px;
+    margin: 10px 0 15px;
+    padding: 12px 15px;
+    background: #003d15;
+    border-left: 5px solid #008e2f;
+    border-radius: 6px;
+    color: #fff;
+}
+
+/* Mobile responsive for bubble */
+@media screen and (max-width: 768px) {
+    .bubble {
+        max-width: 95%;
+        margin: 15px auto;
+        padding: 15px;
+    }
+}
